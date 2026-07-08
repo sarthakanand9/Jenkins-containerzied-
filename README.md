@@ -28,20 +28,36 @@ Install the required software on the Jenkins server.
 Update Server
 
 sudo apt update
+
 sudo apt upgrade -y
+
 Install Git
+
 sudo apt install git -y
+
 Install Docker
+
 sudo apt install docker.io -y
+
 Enable Docker
+
 sudo systemctl enable docker
+
 sudo systemctl start docker
+
 Install Docker Compose
+
 sudo apt install docker-compose-v2 -y
+
 Allow Jenkins to Access Docker
+
 sudo usermod -aG docker jenkins
+
 sudo systemctl restart jenkins
+
+
 🔧 Jenkins Configuration
+
 Source Code Management
 
 Repository:
@@ -51,9 +67,13 @@ https://github.com/<your-username>/<repository-name>.git
 Branch:
 
 */main
+
 🖥️ Jenkins Execute Shell Script
+
 #!/bin/bash
+
 set -e
+
 
 echo "===== Starting Deployment ====="
 

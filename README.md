@@ -26,6 +26,7 @@ Ubuntu 24.04 (AWS EC2)
 Install the required software on the Jenkins server.
 
 Update Server
+
 sudo apt update
 sudo apt upgrade -y
 Install Git
